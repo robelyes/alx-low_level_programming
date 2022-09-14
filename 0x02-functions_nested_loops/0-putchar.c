@@ -1,18 +1,23 @@
 #include "main.h"
+
 /**
-* main - wrties the string "_putchar" to stdout
-* @string - the string to be printed to standard ouput
-* Return: returns 0 after printing the string
-*/
+ * main - prints _putchar
+ *
+ * Description: prints _putchar
+ *
+ * Return: 0 (Success)
+ */
+
 int main(void)
 {
-	char string[] = "_putchar";
-	int i;
+char text[9] = "_putchar";
+int i = 0;
 
-	for (i = 0; i < 8; i++)
-	{
-		_putchar(string[i]);
-	}
-	_putchar('\n');
-	return (0);
+for (i = 0; i < 8; i++)
+{
+_putchar(text[i]);
+}
+_putchar('\n');
+
+return (0);
 }
