@@ -1,19 +1,18 @@
-#include "_putchar"
+#include "main.h"
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+* main - wrties the string "_putchar" to stdout
+* @string - the string to be printed to standard ouput
+* Return: returns 0 after printing the string
+*/
 int main(void)
 {
-	char *sh = "_putchar";
+	char string[] = "_putchar";
+	int i;
 
-	while (*sh)
+	for (i = 0; i < 8; i++)
 	{
-		0-putchar.c(*sh);
-		sh++;
+		_putchar(string[i]);
 	}
-	0-putchar.c('\n');
-
+	_putchar('\n');
 	return (0);
 }
